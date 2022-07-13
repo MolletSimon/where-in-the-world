@@ -1,15 +1,26 @@
-function Filter() {
+function Filter({ countries, setCountriesDisplayed }) {
+  const selectRegion = (event) => {
+    if (event.target.value != "all")
+      setCountriesDisplayed(
+        countries.filter((c) => c.region == event.target.value)
+      );
+    else setCountriesDisplayed(countries);
+  };
+
   return (
     <div className="mr-20">
-      <select className="bg-white p-6 shadow-md rounded-md">
-        <option defaultValue disabled>
+      <select
+        className="bg-white p-6 shadow-md rounded-md"
+        onChange={(event) => selectRegion(event)}
+      >
+        <option defaultValue value="all">
           Filter by Region
         </option>
-        <option>Africa</option>
-        <option>America</option>
-        <option>Asia</option>
-        <option>Europe</option>
-        <option>Oceania</option>
+        <option value="Africa">Africa</option>
+        <option value="Americas">America</option>
+        <option value="Asia">Asia</option>
+        <option value="Europe">Europe</option>
+        <option value="Oceania">Oceania</option>
       </select>
     </div>
   );

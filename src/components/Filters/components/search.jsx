@@ -2,7 +2,7 @@ function Search({ setCountriesDisplayed, countries }) {
   const search = (event) => {
     setCountriesDisplayed(
       countries.filter((c) =>
-        c.name.common.toLowerCase().startsWith(event.target.value)
+        c.name.common.toLowerCase().startsWith(event.target.value.toLowerCase())
       )
     );
   };

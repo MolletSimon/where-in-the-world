@@ -8,7 +8,10 @@ function Filters({ countries, setCountriesDisplayed }) {
         countries={countries}
         setCountriesDisplayed={setCountriesDisplayed}
       />
-      <Filter />
+      <Filter
+        countries={countries}
+        setCountriesDisplayed={setCountriesDisplayed}
+      />
     </div>
   );
 }
