@@ -10,16 +10,18 @@ function App() {
   const [countryDetail, setCountryDetail] = useState({});
 
   return (
-    <div className="bg-lightBackground min-h-screen">
-      <Header darkMode={darkMode} setDarkmode={setDarkmode} />
-      {detail ? (
-        countryDetail && (
-          <Detail countryDetail={countryDetail} setDetail={setDetail} />
-        )
-      ) : (
-        <Home setCountryDetail={setCountryDetail} setDetail={setDetail} />
-      )}
-      {/* <Outlet /> */}
+    <div className={darkMode && `dark`}>
+      <div className="bg-lightBackground min-h-screen dark:bg-black">
+        <Header darkMode={darkMode} setDarkmode={setDarkmode} />
+        {detail ? (
+          countryDetail && (
+            <Detail countryDetail={countryDetail} setDetail={setDetail} />
+          )
+        ) : (
+          <Home setCountryDetail={setCountryDetail} setDetail={setDetail} />
+        )}
+        {/* <Outlet /> */}
+      </div>
     </div>
   );
 }
