@@ -1,10 +1,20 @@
-function Card({ country }) {
+import { Link, Outlet } from "react-router-dom";
+
+function Card({ country, setDetail, setCountryDetail }) {
+  const onClickDetail = () => {
+    setCountryDetail(country);
+    setDetail(true);
+  };
+
   return (
-    <div className="shadow-md rounded-md w-4/5">
+    <div
+      className="shadow-md rounded-md w-4/5 cursor-pointer"
+      onClick={onClickDetail}
+    >
       <img
         src={country.flags.png}
         className=" max-h-40 h-40 object-cover rounded-md"
-        width="300"
+        width="350"
         height="100"
       />
 

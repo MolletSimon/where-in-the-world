@@ -1,11 +1,16 @@
 import Card from "./card";
 
-function CardsView({ countriesDisplayed }) {
+function CardsView({ countriesDisplayed, setDetail, setCountryDetail }) {
   return (
-    <div className="grid grid-cols-4 gap-6 ml-32">
+    <div className="grid grid-cols-4 gap-6 items-center m-6">
       {countriesDisplayed &&
         countriesDisplayed.map((country, index) => (
-          <Card key={index} country={country} />
+          <Card
+            setCountryDetail={setCountryDetail}
+            setDetail={setDetail}
+            key={index}
+            country={country}
+          />
         ))}
     </div>
   );
