@@ -10,11 +10,7 @@ This is a solution to the [REST Countries API with color theme switcher challeng
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
 ## Overview
 
@@ -31,7 +27,9 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+<img width="1677" alt="Screenshot at Jul 14 12-43-49" src="https://user-images.githubusercontent.com/43732526/178965214-4c4e15d4-5cf7-4059-a37f-07f1c0b2589d.png">
+<img width="1674" alt="Screenshot at Jul 14 12-44-30" src="https://user-images.githubusercontent.com/43732526/178965231-1a1231e2-7e97-496c-b941-944b05fdea03.png">
+
 
 ### Links
 
