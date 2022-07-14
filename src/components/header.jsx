@@ -5,11 +5,11 @@ function Header({ darkMode, setDarkmode }) {
 
   return (
     <header
-      className="bg-lightBackground flex justify-between 
-      p-10 drop-shadow-lg items-center"
+      className="bg-lightBackground dark:bg-darkBackground flex justify-between 
+      md:p-10 p-6 drop-shadow-lg items-center"
     >
       <h1
-        className="text-3xl font-extrabold text-lightText 
+        className="text-xl md:text-3xl font-extrabold text-lightText dark:text-darkText
       font-Nunito ml-3"
       >
         Where in the world ?
@@ -19,12 +19,16 @@ function Header({ darkMode, setDarkmode }) {
         onClick={switchDarkMode}
       >
         {darkMode ? (
-          <span className="material-symbols-outlined mr-3">dark_mode</span>
+          <span className="material-symbols-outlined mr-3 dark:text-darkText">
+            dark_mode
+          </span>
         ) : (
           <span className="material-symbols-outlined mr-3">dark_mode</span>
         )}
 
-        <h3 className="font-Nunito font-semibold text-xl">Dark Mode</h3>
+        <h3 className="font-Nunito font-semibold text-md md:text-xl dark:text-darkText">
+          Dark Mode
+        </h3>
       </div>
     </header>
   );

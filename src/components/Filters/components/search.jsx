@@ -7,11 +7,12 @@ function Search({ setCountriesDisplayed, countries }) {
     );
   };
   return (
-    <div className="m-10">
+    <div className="md:m-10">
       <input
         type="text"
-        className="p-5 w-[600px] ml-20 bg-white drop-shadow-lg 
-        font-Nunito rounded-lg text-ligthInput font-semibold"
+        className="w-[90vw] p-5 md:w-[600px] md:ml-20 bg-white dark:bg-darkInput 
+        dark:text-darkText drop-shadow-lg font-Nunito 
+        rounded-lg text-ligthInput font-semibold"
         placeholder="🔍    Search for a country..."
         onChange={(event) => search(event)}
       />

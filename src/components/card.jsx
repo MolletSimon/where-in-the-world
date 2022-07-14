@@ -8,23 +8,23 @@ function Card({ country, setDetail, setCountryDetail }) {
 
   return (
     <div
-      className="shadow-md rounded-md w-4/5 cursor-pointer"
+      className="shadow-md rounded-md cursor-pointer dark:bg-darkInput"
       onClick={onClickDetail}
     >
       <img
         src={country.flags.png}
-        className=" max-h-40 h-40 object-cover rounded-md"
-        width="350"
-        height="100"
+        className=" max-h-50 h-48 object-cover rounded-md"
+        width="500"
+        height="200"
       />
 
-      <div className="ml-5 mt-4 mb-14">
+      <div className="ml-5 mt-4 mb-14 dark:text-white">
         <h2 className="font-Nunito text-xl font-extrabold mb-4 mt-8">
           {country.name.common}
         </h2>
         <p className="font-Nunito mb-1">
           <span className="font-semibold">Population: </span>
-          {country.population}
+          {commafy(parseInt(country.population))}
         </p>
         <p className="font-Nunito mb-1">
           <span className="font-semibold">Region: </span>
@@ -37,6 +37,17 @@ function Card({ country, setDetail, setCountryDetail }) {
       </div>
     </div>
   );
+}
+
+function commafy(num) {
+  var str = num.toString().split(".");
+  if (str[0].length >= 5) {
+    str[0] = str[0].replace(/(\d)(?=(\d{3})+$)/g, "$1,");
+  }
+  if (str[1] && str[1].length >= 5) {
+    str[1] = str[1].replace(/(\d{3})/g, "$1 ");
+  }
+  return str.join(".");
 }
 
 export default Card;

@@ -10,8 +10,8 @@ function App() {
   const [countryDetail, setCountryDetail] = useState({});
 
   return (
-    <div className={darkMode && `dark`}>
-      <div className="bg-lightBackground min-h-screen dark:bg-black">
+    <div className={darkMode ? "dark" : ""}>
+      <div className="bg-lightBackground min-h-screen dark:bg-darkBackground">
         <Header darkMode={darkMode} setDarkmode={setDarkmode} />
         {detail ? (
           countryDetail && (

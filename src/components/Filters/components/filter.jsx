@@ -8,9 +8,10 @@ function Filter({ countries, setCountriesDisplayed }) {
   };
 
   return (
-    <div className="mr-20">
+    <div className="md:mr-20 md:mt-0 mt-6">
       <select
-        className="bg-white p-6 shadow-md rounded-md"
+        className="bg-white dark:bg-darkInput dark:text-white 
+        p-6 shadow-md rounded-md"
         onChange={(event) => selectRegion(event)}
       >
         <option defaultValue value="all">
