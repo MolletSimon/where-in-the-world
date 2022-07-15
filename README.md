@@ -27,9 +27,8 @@ Users should be able to:
 
 ### Screenshot
 
-<img width="1677" alt="Screenshot at Jul 14 12-43-49" src="https://user-images.githubusercontent.com/43732526/178965214-4c4e15d4-5cf7-4059-a37f-07f1c0b2589d.png">
-<img width="1674" alt="Screenshot at Jul 14 12-44-30" src="https://user-images.githubusercontent.com/43732526/178965231-1a1231e2-7e97-496c-b941-944b05fdea03.png">
-
+<img width="1678" alt="home" src="https://user-images.githubusercontent.com/43732526/179122820-488039cf-24e6-4c6d-b505-b7900111fc88.png">
+<img width="1674" alt="detail" src="https://user-images.githubusercontent.com/43732526/179122832-98a06c71-838e-48c9-a282-0766d319f96f.png">
 
 ### Links
 
