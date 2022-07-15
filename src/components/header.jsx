@@ -27,7 +27,7 @@ function Header({ darkMode, setDarkmode }) {
         )}
 
         <h3 className="font-Nunito font-semibold text-md md:text-xl dark:text-darkText">
-          Dark Mode
+          {darkMode ? "Light Mode" : "Dark Mode"}
         </h3>
       </div>
     </header>
